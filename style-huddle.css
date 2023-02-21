@@ -1,0 +1,128 @@
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin:auto;
+}
+
+#logo {
+    height: 30px;
+    margin:20px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin:30px;
+    height: auto;
+}
+
+#image { /*Si on met l'image via css */
+    min-width:375px;
+}
+
+.texte {
+    min-width:375px;
+    margin:30px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color:white;
+    padding-top:10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color:white;
+}
+
+.bouton {
+    text-align: left;
+    padding-top:10px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color:hsl(257, 40%, 49%);
+    background-color: white;
+    border:0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px  #4d4d4d;
+    width: 120px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color:white;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    margin:10px 50px 10px 10px;
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+.icon {
+    color:white;  
+    border-radius: 50%;
+    border: solid 0.8px white;
+    font-size: 1.8rem;
+    width: 30px;
+    height:30px;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+}
+
+.icon:hover {
+    color:hsl(300, 69%, 71%);
+    border:solid 0.8px hsl(300, 69%, 71%);
+}
+
+/* Media : changer l'image de fond pour le mobile */
+@media screen and (max-width:375px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }  
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        height: auto;
+    }
+
+    .texte {
+        max-width:375px;
+        margin:2px;
+    }
+
+    footer{
+        text-align: center;
+        margin:10px 10px 10px 10px;
+        display:flex;
+        justify-content: center;
+    }
+
+    #image {
+        max-width:350px;
+        width: auto;
+    }
+
+    h1, p, .bouton {
+        text-align:center;
+    }
+
+}
+
